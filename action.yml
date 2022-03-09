@@ -1,0 +1,12 @@
+name: 'Obama Medal Action'
+description: 'Comments an image of the Obama medals himself meme when someone merges their own PR'
+author: 'Shriram'
+
+inputs:
+  GITHUB_TOKEN:
+    description: 'GitHub token'
+    required: true
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js' 
