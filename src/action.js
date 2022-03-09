@@ -12,7 +12,7 @@ async function run() {
   const merged_name = pull_request.merged_by.login;  
   let body = `hello ${opened_name} and ${merged_name} thanks for merging this feature`;
   if(opened_name === merged_name) {
-    body = `Eyyyyy ![Self.png](https://user-images.githubusercontent.com/49370927/157414445-bfde117a-9748-4018-80b5-d356479a54cb.jpg)`;
+    body = `![Self.png](https://user-images.githubusercontent.com/49370927/157414445-bfde117a-9748-4018-80b5-d356479a54cb.jpg)`;
   }
   await octokit.rest.issues.createComment({
     ...context.repo,
